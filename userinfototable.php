@@ -9,6 +9,8 @@
 <body class="main">
 <div class="container">
     <?php
+    ini_set('display_errors', 'on');
+    error_reporting(-1);
     $validated = false;
     if (isset($_POST['sbm'])) {
         $fn = isset($_POST['fn']) ? $_POST['fn'] : '';
